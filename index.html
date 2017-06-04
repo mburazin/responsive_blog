@@ -8,6 +8,7 @@
   <meta itemprop="name" content="Udacity Responsive Images course project">
   <meta name="mobile-web-app-capable" content="yes">
   <meta id="theme-color" name="theme-color" content="#307699">
+  <meta http-equiv="content-type" content="text/html" charset="utf-8">
 
   <!-- loads the Udacity Feedback extension -->
   <meta name="udacity-grader" content="http://udacity.github.io/responsive-images/project/project-grader.json" unit-tests="http://udacity.github.io/responsive-images/project/project-grader.js">
@@ -16,13 +17,20 @@
 
   <title>My responsive blog: picture story</title>
 
+  <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial">
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" media="screen and (min-width:500px)" href="css/over500.css">
 
 </head>
 
 <body>
 
-  <h1>My responsive blog</h1>
+  <header class="blog-header">
+
+    <img class="header-logo" src="images_src/fixed/udacity.svg">
+    <h1 class="header-title">My responsive blog</h1>
+
+  </header>
 
   <article>
 
@@ -30,7 +38,7 @@
 
     <h2>My story</h2>
 
-    <p>I love cheese, especially manchego swiss. <img src="images_src/fixed/smiley_face.png"> Fromage queso jarlsberg cheesy feet emmental cottage cheese camembert de normandie bocconcini. Cottage cheese everyone loves cauliflower cheese rubber cheese squirty cheese halloumi cow fondue. Bocconcini cheese and biscuits everyone loves fondue red leicester st. agur blue cheese rubber cheese ricotta. Cheesy grin mozzarella.</p>
+    <p>I love cheese, especially manchego swiss. <span class="smiley-face">☺</span> Fromage queso jarlsberg cheesy feet emmental cottage cheese camembert de normandie bocconcini. Cottage cheese everyone loves cauliflower cheese rubber cheese squirty cheese halloumi cow fondue. Bocconcini cheese and biscuits everyone loves fondue red leicester st. agur blue cheese rubber cheese ricotta. Cheesy grin mozzarella.</p>
     <figure>
       <img src="images/horses-1600_2x.jpg">
       <figcaption>Horses enjoying the Sun</figcaption>
@@ -84,14 +92,16 @@
 
   </article>
 
-  <footer>
-    <img style="max-width: 100%" src="images_src/fixed/flourish.png">
-    <!--
-    Flourish credit: http://pixabay.com/en/flourish-line-border-decoration-31609/
-    -->
+  <hr>
 
-    <br>
-    <a href="//github.com/udacity/responsive-images/tree/master/project/start" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
+  <footer>
+    <ul class="links-zocial">
+      <li><a class="zocial-link zocial-twitter" href="#"></a></li>
+      <li><a class="zocial-link zocial-facebook" href="#"></a></li>
+      <li><a class="zocial-link zocial-googleplus" href="#"></a></li>
+      <li><a class="zocial-link zocial-digg" href="#"></a></li>
+    </ul>
+    <a href="https://github.com/mburazin/responsive_blog" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
   </footer>
 </body>
 </html>

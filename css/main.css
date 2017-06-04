@@ -1,3 +1,8 @@
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
 body, html {
   width: 100%;
   height: 100%;
@@ -12,7 +17,9 @@ body {
 }
 
 article,
-footer {
+header,
+footer,
+hr {
   max-width: 50em;
   margin: 0 auto;
   padding: 0 0.6em;
@@ -41,4 +48,44 @@ footer a {
   display: block;
   margin: 1em 0;
   text-align: center;
+}
+
+p span.smiley-face {
+  font-size: 1.5em;
+}
+
+.blog-header {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  height: 1.5em;
+  margin: 0 1.2em 0 0.2em;
+}
+
+.header-title {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 1.6em;
+}
+
+.links-zocial {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.links-zocial li {
+  display: inline-block;
+}
+
+.zocial-link {
+  text-decoration: none;
+  padding: 0 1em;
+  font-size: 1.2em;
+  color: black;
+}
+
+.zocial-link:hover {
+  color: #02b3e4;
 }
